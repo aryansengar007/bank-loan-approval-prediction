@@ -1,11 +1,13 @@
-🚀 Bank Loan Approval Prediction
+# 🚀 Bank Loan Approval Prediction
 
 A complete Machine Learning pipeline to predict loan approval status, including data preprocessing, feature engineering, baseline models, hyperparameter tuning, model comparison, evaluation metrics, and visualization reports.
 
 This project implements multiple ML algorithms (Logistic Regression, Random Forest, Gradient Boosting, Extra Trees, Decision Tree, KNN, Naive Bayes, AdaBoost) and performs RandomizedSearchCV-based hyperparameter optimization.
 Advanced plots such as model comparison graphs, hyperparameter analysis, and confusion matrices are also generated.
 
-📌 Features
+---
+
+## 📌 Features
 
 ✔ Complete data preprocessing
 ✔ Handling missing values
@@ -18,7 +20,9 @@ Advanced plots such as model comparison graphs, hyperparameter analysis, and con
 ✔ Visualization & saved PNG reports
 ✔ Easy to extend for new datasets
 
-🧠 ML Models Used
+---
+
+## 🧠 ML Models Used
 🔹 Tuned Models (using RandomizedSearchCV)
 
 Random Forest
@@ -39,8 +43,11 @@ K-Nearest Neighbors
 
 Naive Bayes
 
-🧾 Workflow Explanation
-1️⃣ Load & Preprocess Data
+---
+
+## 🧾 Workflow Explanation
+
+### 1️⃣ Load & Preprocess Data
 
 Removes whitespaces
 
@@ -58,11 +65,11 @@ Asset-to-loan ratio
 
 Debt burden
 
-2️⃣ Train-Test Split
+### 2️⃣ Train-Test Split
 
 Data is split into X_train, X_test, y_train, y_test.
 
-3️⃣ Baseline Models
+### 3️⃣ Baseline Models
 
 Each baseline model is trained and evaluated using:
 
@@ -70,7 +77,7 @@ Accuracy
 
 Cross-validation ROC-AUC
 
-4️⃣ Hyperparameter Tuning
+### 4️⃣ Hyperparameter Tuning
 
 Performed using RandomizedSearchCV on:
 
@@ -90,7 +97,7 @@ Best CV ROC-AUC
 
 Trained best estimator
 
-5️⃣ Final Evaluation
+### 5️⃣ Final Evaluation
 
 All models (tuned + baseline) are evaluated on test data:
 
@@ -100,11 +107,11 @@ ROC-AUC (if available)
 
 CV ROC-AUC
 
-6️⃣ Visualizations Generated
+### 6️⃣ Visualizations Generated
 
 The script automatically generates:
 
-📌 Model Comparison Plot
+#### 📌 Model Comparison Plot
 
 Test accuracy
 
@@ -114,7 +121,7 @@ Test ROC-AUC
 
 Tuned vs Baseline distribution
 
-📌 Hyperparameter Analysis Plot
+#### 📌 Hyperparameter Analysis Plot
 
 Best CV scores
 
@@ -124,7 +131,7 @@ max_depth
 
 learning_rate
 
-📌 Confusion Matrix Comparison
+#### 📌 Confusion Matrix Comparison
 Top 4 models based on CV AUC
 
 All saved as:
@@ -135,14 +142,18 @@ hyperparameter_analysis.png
 
 confusion_matrices.png
 
-▶️ How to Run
+---
+
+## ▶️ How to Run
 
 1. Install Dependencies
    pip install pandas numpy scikit-learn seaborn matplotlib scipy
 2. Run the Script
    python main_hypertuned.py
 
-📝 Dataset Requirements
+---
+
+## 📝 Dataset Requirements
 
 Your dataset must contain these columns for full functionality:
 
@@ -160,7 +171,9 @@ bank_asset_value Financial asset
 
 Extra columns are supported automatically.
 
-🏆 Best Model Selection
+---
+
+## 🏆 Best Model Selection
 
 The script automatically compares:
 
@@ -172,7 +185,9 @@ Test ROC-AUC
 
 And identifies the strongest model for deployment.
 
-🧑‍💻 Author
+---
+
+## 🧑‍💻 Author
 
 Aryan Sengar
 B.Tech CSE | ML Developer | Data Enthusiast
